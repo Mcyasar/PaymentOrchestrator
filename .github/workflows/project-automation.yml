@@ -1,0 +1,15 @@
+name: Move Task on Label
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  update_project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Move to In Progress
+        if: github.event.label.name == 'status:red-phase'
+        uses: actions/add-to-project@v1.0.2
+        with:
+          project-url: https://github.com/users/Mcyasar/projects/1
+          github-token: ${{ secrets.PROJECTS_SECRET_TOKEN }}
