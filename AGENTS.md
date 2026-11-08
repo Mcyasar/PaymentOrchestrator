@@ -95,8 +95,9 @@ When moving a task across columns, use the GitHub MCP tool `update_project_item_
 * Lock Constraint: tests/ remains write-locked. All tests must remain green without assertion changes.
 1. Refactor the code for domain clarity, allocation efficiency, and formatting without altering external behaviors or breaking tests.
 2. Run `dotnet format --verify-no-changes` and `dotnet test`.
-3. Move the project item to `In Review`.
-4. Submit a Pull Request targeting `main` referencing the issue (`Closes #<issue-number>`) using the **Pull Request Template**.
+3. Push changes to origin branch: `git push origin feature/<issue-number>-<short-slug>`.
+4. Move the project item to `In Review`.
+5. Submit a Pull Request targeting `main` referencing the issue (`Closes #<issue-number>`) using the **Pull Request Template**.
 
 ---
 
