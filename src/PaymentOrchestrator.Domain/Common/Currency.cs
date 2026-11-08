@@ -6,11 +6,14 @@ public sealed record Currency
 
     public Currency(string code)
     {
-        throw new NotImplementedException();
+        if (string.IsNullOrWhiteSpace(code))
+        {
+            throw new ArgumentException("Currency code cannot be null or empty.", nameof(code));
+        }
+
+        Code = code;
     }
 
-    public static Currency Create(string code)
-    {
-        throw new NotImplementedException();
-    }
+    public static Currency Create(string code) => new(code);
 }
+
