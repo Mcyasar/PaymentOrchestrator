@@ -1,0 +1,15 @@
+{
+  "owner": "Mcyasar",
+  "projectNumber": 2,
+  "projectId": "PVT_kwHOAQGCcc4BqmN5",
+  "statusFieldId": "PVTSSF_lAHOAQGCcc4BqmN5zho8qQs",
+  "columns": {
+    "Backlog": "f75ad846",
+    "Ready for Human Review": "81fb4b2b",
+    "Ready for Dev": "61e4505c",
+    "In Progress - Red Phase": "47fc9ee4",
+    "In Progress - Green Phase": "d930ffb3",
+    "In Review": "df73e18b",
+    "Done": "98236657"
+  }
+}
