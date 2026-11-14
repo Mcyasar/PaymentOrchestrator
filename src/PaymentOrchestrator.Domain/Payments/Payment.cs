@@ -25,7 +25,22 @@ public sealed class Payment
         throw new NotImplementedException();
     }
 
+    public Result Capture(TransactionId? transactionId = null)
+    {
+        throw new NotImplementedException();
+    }
+
     public Result Fail(string reason)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Result Void(string reason)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Result Refund(string reason)
     {
         throw new NotImplementedException();
     }
